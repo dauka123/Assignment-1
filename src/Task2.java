@@ -8,7 +8,7 @@ public class Task2 {
         @ return - returning average of array
     */
     public static float getAverage(int n, int[] arr){
-        float average = getSum(n, arr) / n;
+        float average = getSum(n, arr) / n; // find the average of array
         return average;
     }
     /*
@@ -22,14 +22,14 @@ public class Task2 {
         if (n == 1){
             return sum;
         }
-        sum += getSum(n-1,arr);
+        sum += getSum(n-1,arr); // find the sum of array
         return sum;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
-        for (int i  = 0; i < n; i++ ){
+        for (int i  = 0; i < n; i++ ){ // input array
             arr[i] = scanner.nextInt();
         }
         System.out.println(getAverage(n,arr));
