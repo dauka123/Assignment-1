@@ -12,8 +12,8 @@ public class Task8 {
         }
         else {
             char a = s.charAt(0);
-            if (Character.isDigit(a)) {
-                return CheckDigit(s.substring(1));
+            if (Character.isDigit(a)) { // check zero's index character
+                return CheckDigit(s.substring(1)); // start with the next character
             }
             else {
                 return false;
@@ -22,8 +22,8 @@ public class Task8 {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String s = scanner.next();
-        if(CheckDigit(s)){
+        String s = scanner.next(); // input string
+        if(CheckDigit(s)){ // call function
             System.out.println("Yes");
         }else{
             System.out.println("No");
