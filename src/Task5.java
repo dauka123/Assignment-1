@@ -12,11 +12,11 @@ public class Task5 {
         else if (num == 1)
             return 1;
         else
-            return findFibNum(num-1) + findFibNum(num-2);
+            return findFibNum(num-1) + findFibNum(num-2); // formula to find the number in seq
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = scanner.nextInt(); // input number
         System.out.println(findFibNum(num));
     }
 }
