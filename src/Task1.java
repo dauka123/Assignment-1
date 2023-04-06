@@ -13,7 +13,7 @@ public class Task1 {
             return min1;
         }
         int min2 = getMin(n -1, arr);
-        if (min1 < min2){
+        if (min1 < min2){ // find the minimum
             return min1;
         }
         else{
@@ -24,7 +24,7 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
-        for (int i  = 0; i < n; i++ ){
+        for (int i  = 0; i < n; i++ ){ // input array
             arr[i] = scanner.nextInt();
         }
         System.out.println(getMin(n, arr));
