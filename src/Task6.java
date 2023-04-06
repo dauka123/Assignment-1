@@ -12,13 +12,13 @@ public class Task6 {
         if (n == 1){
             return degree;
         }
-        degree *= findDegree(a, n-1);
+        degree *= findDegree(a, n-1); // find the degree and return
         return degree;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        int n = scanner.nextInt();
+        int n = scanner.nextInt(); // input numbers a, n
         System.out.println(findDegree(a,n));
     }
 }
