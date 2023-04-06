@@ -12,13 +12,13 @@ public class Task9 {
             return 1;
         }
         else{
-            return findBinCoefficient(n-1, k-1) + findBinCoefficient(n-1, k);
+            return findBinCoefficient(n-1, k-1) + findBinCoefficient(n-1, k); // just a formula
         }
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        int k = scanner.nextInt();
-        System.out.print(findBinCoefficient(n, k));
+        int k = scanner.nextInt(); // input numbers
+        System.out.print(findBinCoefficient (n, k));
     }
 }
