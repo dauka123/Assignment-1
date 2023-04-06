@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Task3 {
     /*
         @ checkPrime - definition of checking prime function
-        @ n - number that need to check for prime
+        @ num - number that need to check for prime
         @ return - returning result of checking
     */
     public static String checkPrime(int num){
