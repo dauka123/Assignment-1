@@ -15,7 +15,7 @@ public class Task6 {
         degree *= findDegree(a, n-1); // find the degree and return
         return degree;
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int n = scanner.nextInt(); // input numbers a, n

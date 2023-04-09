@@ -15,7 +15,7 @@ public class Task9 {
             return findBinCoefficient(n-1, k-1) + findBinCoefficient(n-1, k); // formula
         }
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int k = scanner.nextInt(); // input numbers

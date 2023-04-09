@@ -14,7 +14,7 @@ public class Task5 {
         else
             return findFibonacciNum(num-1) + findFibonacciNum(num-2); // formula to find the number in seq
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt(); // input number
         System.out.println(findFibonacciNum(num));

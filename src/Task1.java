@@ -16,7 +16,7 @@ public class Task1 {
         return Math.min(min1, min2); // find the minimum with Math library
                                      // and returning the minimum
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];

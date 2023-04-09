@@ -15,7 +15,7 @@ public class Task7 {
         arr[end] = temp;
         reverseOrder(arr, start+1, end-1); // change numbers order
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int [] arr = new int [n];

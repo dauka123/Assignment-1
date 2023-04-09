@@ -25,7 +25,7 @@ public class Task2 {
         sum += findSum(n-1,arr); // find the sum of array
         return sum;
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];

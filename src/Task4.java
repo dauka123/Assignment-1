@@ -13,7 +13,7 @@ public class Task4 {
         num *= findFactorial(num-1); // find the factorial of number
         return num;
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt(); // input number
         System.out.println(findFactorial(num));

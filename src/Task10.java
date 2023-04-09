@@ -13,7 +13,7 @@ public class Task10 {
         }
         return findGCD(b, a % b); // Euclidean Algorithm
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt(); // input numbers
         int b = sc.nextInt();

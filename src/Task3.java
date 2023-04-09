@@ -20,7 +20,7 @@ public class Task3 {
             return "Composite";
         }
     }
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt(); // input num
         System.out.println(checkPrime(num));
