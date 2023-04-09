@@ -1,7 +1,11 @@
 # Assignment-1
 Explanations my tasks 
 ## Task 1
-In this code you need to find the minimum digit, for this I used recursion where the digits go from the very last to the very first.
+**Description**: Return the minimum value of an array
+
+**Explanation:** In this code you need to find the minimum digit, for this I used recursion where the digits go from the very last to the very first.
+
+**Solution:**
 ```ruby
     public static int getMin(int n, int[] arr){
         int min1 = arr[n - 1];
@@ -18,7 +22,11 @@ In this code you need to find the minimum digit, for this I used recursion where
     }
 ```
 ## Task 2
-In this task I used two functions, the first is to find the sum of all the numbers in the array using recursion. In the second is to find the average number. 
+**Description**: Return average value of array
+
+**Explanation:** In this task I used two functions, the first is to find the sum of all the numbers in the array using recursion. In the second is to find the average number. 
+
+**Solution:**
 ```ruby
     public static float getAverage(int n, int[] arr){
         float average = getSum(n, arr) / n; // find the average of array
@@ -34,7 +42,11 @@ In this task I used two functions, the first is to find the sum of all the numbe
     }
 ```
 ## Task 3
-Checking a prime number or not. For this I used the X variable so that when a given number is divided without a remainder by numbers other than itself and 1 we can find out about it.
+**Description:** Check a number for a prime
+
+**Explanation:** Checking a prime number or not. For this I used the X variable so that when a given number is divided without a remainder by numbers other than itself and 1 we can find out about it.
+
+**Solution:**
 ```ruby
     public static String checkPrime(int num){
         int x = 1;
@@ -52,7 +64,11 @@ Checking a prime number or not. For this I used the X variable so that when a gi
     }
 ```
 ## Task 4
-Each time we multiply the number by (num-1) and when (num) reaches 1 stop it so that it does not also multiply by 0.
+**Description:** Return factorial number
+
+**Explanation:** Each time we multiply the number by (num-1) and when (num) reaches 1 stop it so that it does not also multiply by 0.
+
+**Solution:**
 ```ruby
     public static int findFactorial(int num){
         if (num == 1){
@@ -63,7 +79,11 @@ Each time we multiply the number by (num-1) and when (num) reaches 1 stop it so 
     }
 ```
 ## Task 5
-Using the formula and recursion we find the number based on the sequence. 
+**Description:** Return the number on n-th position of fibonacci sequence
+
+**Explanation:** Using the formula and recursion we find the number based on the sequence. 
+
+**Solution:**
 ```ruby
     public static int findFibNum(int num){
         if (num == 0)
@@ -75,7 +95,11 @@ Using the formula and recursion we find the number based on the sequence.
     }
 ```
 ## Task 6
-Having two numbers using recursion multiply the number by itself until (n) equals 1. 
+**Description:** Return base in power n
+
+**Explanation:** Having two numbers using recursion multiply the number by itself until (n) equals 1.
+
+**Solution:**
 ```ruby
     public static int findDegree(int a, int n){
         int degree = a;
@@ -87,7 +111,11 @@ Having two numbers using recursion multiply the number by itself until (n) equal
     }
 ```
 ## Task 7
-We take the very first and last number, then gradually swap them until all the numbers are at their positions.
+**Description:** Reverse an array
+
+**Explanation:** We take the very first and last number, then gradually swap them until all the numbers are at their positions.
+
+**Solution:**
 ```ruby
     public static void reverseOrder(int[] arr, int start, int end) {
         if (start >= end) {
@@ -100,7 +128,11 @@ We take the very first and last number, then gradually swap them until all the n
     }
 ```
 ## Task 8
-Take the first character of the string 's', then check that character. If it is a number, check the other characters individually, but this time start with the next number and in the end return 'true' or 'false'.
+**Description:** Check is provided string is integer
+
+**Explanation:** Take the first character of the string 's', then check that character. If it is a number, check the other characters individually, but this time start with the next number and in the end return 'true' or 'false'.
+
+**Solution:**
 ```ruby
     public static boolean CheckDigit(String s) {
         if (s.length() == 0) {
@@ -118,7 +150,11 @@ Take the first character of the string 's', then check that character. If it is 
     }
 ```
 ## Task 9
-A formula is available to us, by which we can easily find the binomial coefficient.
+**Description:** Return binomial coefficient of n and k params
+
+**Explanation:** A formula is available to us, by which we can easily find the binomial coefficient.
+
+**Solution:**
 ```ruby
     public static int findBinCoefficient(int n, int k) {
         if(n == k || k == 0){
@@ -130,7 +166,11 @@ A formula is available to us, by which we can easily find the binomial coefficie
     }
 ```
 ## Task 10
-Using the Euclidean algorithm, find the smallest common divisor of two numbers.
+**Description:** Return GCD of a and b
+
+**Explanation:** Using the Euclidean algorithm, find the smallest common divisor of two numbers.
+
+**Solution:**
 ```ruby
     public static int findGCD(int a, int b) {
         if (b == 0){
