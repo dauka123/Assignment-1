@@ -2,23 +2,19 @@ import java.util.Scanner;
 
 public class Task1 {
     /*
-        @ getMin - definition of min
-        @ n - lenght of array
+        @ findMin - definition of min
+        @ n - length of array
         @ arr - array
         @ return - returning minimum of array
     */
-    public static int getMin(int n, int[] arr){
+    public static int findMin(int n, int[] arr){
         int min1 = arr[n - 1];
         if (n == 1){
             return min1;
         }
-        int min2 = getMin(n -1, arr);
-        if (min1 < min2){ // find the minimum
-            return min1;
-        }
-        else{
-            return min2;
-        }
+        int min2 = findMin(n -1, arr);
+        return Math.min(min1, min2); // find the minimum with Math library
+                                     // and returning the minimum
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -27,7 +23,7 @@ public class Task1 {
         for (int i  = 0; i < n; i++ ){ // input array
             arr[i] = scanner.nextInt();
         }
-        System.out.println(getMin(n, arr));
+        System.out.println(findMin(n, arr));
 
     }
 }

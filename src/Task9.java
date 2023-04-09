@@ -12,7 +12,7 @@ public class Task9 {
             return 1;
         }
         else{
-            return findBinCoefficient(n-1, k-1) + findBinCoefficient(n-1, k); // just a formula
+            return findBinCoefficient(n-1, k-1) + findBinCoefficient(n-1, k); // formula
         }
     }
     public static void main(String[] args) {
